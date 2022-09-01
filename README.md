@@ -1,5 +1,6 @@
 # Portfolio Site - WAbby404.github.io
-## This is first verion of my portfolio. This project is intended to give myself a platform to post my projects, share my information, and make myself available for future employers and collaborators. 
+## This is first verion of my portfolio. 
+## This project is intended to give myself a platform to post my projects, share my information, and make myself available for future employers and collaborators. 
 
 <img src="Images/favicon.svg" align="right" alt="AbbyW Logo" width="100"/>
 
