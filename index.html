@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="Images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <title>Abby Waddell</title>
+</head>
+
+<body>
+  <header>
+          <nav class="nav flex">
+              <div class="nav_logo">
+                  Abby Waddell
+              </div>
+              <img src="Images/favicon.svg" class="logo-size">
+              <div>
+                  <a href="#about" class="nav_links">About</a>
+                  <a href="#projects" class="nav_links">Projects</a>
+                  <a href="#contact" class="nav_links">Contact</a>
+                  <a href="#" class="nav_links">Resume</a>
+              </div>
+          </nav>
+
+          <div class="container">
+              <div class="hero">
+                <h1 class="hero-small-style">Hi, I'm</h1>
+                <h2 class="hero-name-style">Abby Waddell</h2>
+                <h3 class="hero-subtext">I like to work with web pages.</h3>
+                <p class="hero-small-subtext">I'm a software engineer with an interest in building <span class="body-highlight">front-end</span> applications, and a thirst for learning more.</p>
+                <a href="#projects"><button class="hero_button">View my projects</button></a>
+                <a href="#"><button class="hero_button">Resume</button></a>
+              </div>
+          </div>
+  </header>
+
+
+  <main class="container">
+    <div class="section-margin about">
+        <div class="about-text" id="about">
+            <h2 class="section-header">About Me</h2>
+            <p class="about-body">Hello! My name is Abby, I'm a software developer who comes from a background of design, and loves to mix the two together.
+                I took an interest in computers when I was a kid, and my love for technology only grew when I discovered programming in highschool. 
+                <br>
+                In my free time I love to go on hikes with my dog, paint and play too many video games!
+                <br><br>
+                Skills:
+            </p>
+
+            <ul class="technologies">
+                <li class="tooltip"><span class="diamond">✦</span> React
+                    <span class="tooltiptext">Used in:</span>
+                </li>
+                <li class="tooltip"><span class="diamond">✦</span> JavaScript
+                    <span class="tooltiptext">Used in: Proj 04.</span>
+                </li>
+                <li class="tooltip"><span class="diamond">✦</span> CSS
+                    <span class="tooltiptext">Used in: Proj 04.</span>
+                </li>
+                <li class="tooltip"><span class="diamond">✦</span> HTML
+                    <span class="tooltiptext">Used in:  Proj 04.</span>
+                </li>
+                <li class="tooltip"><span class="diamond">✦</span> Git
+                  <span class="tooltiptext">Used in: everyone</span>
+                </li>
+                <li class="tooltip"><span class="diamond">✦</span> JSX
+                  <span class="tooltiptext">Used in: everyone</span>
+                </li>
+            </ul>
+        </div>
+
+      <div class="about-slideshow">
+        <div class="img-box">
+          <div class="slide">
+            <img src="Images/Dewie.svg" class="slide-img-size" alt="">
+            <div class="slide-caption center">This is my dog, Dewie!</div>
+          </div>
+          <div class="slide">
+            <img src="Images/Dewie2.svg" class="slide-img-size">
+            <div class="slide-caption center">Weird Spooky Boy!!</div>
+          </div>
+          <div class="slide">
+            <img src="Images/Dewie3.svg" class="slide-img-size">
+            <div class="slide-caption center">Sandy dog booty</div>
+          </div>
+          <div class="slide">
+            <img src="Images/Dewie4.svg" class="slide-img-size">
+            <div class="slide-caption center">Bath Boy</div>
+          </div>
+          <div class="slide-pink"></div>
+        </div>
+          <div class="dots center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+      </div>
+    </div>
+
+
+    <div id="projects" class="projects section-margin">
+        <h2 class="section-header">Projects</h2>
+
+        <!-- <div class="project">
+            <div class="project-demo">
+                <img src="Images/plant.jpg" class="static"><img src="Images/Plant Gif inspo.gif">
+            </div>
+            <div class="project-text">
+                  <h3 class="project-sub-title"> Proj 01.</h3>
+                  <h4 class="project-title">Large personal Project</h4>
+                  <div class="body-background">
+                    <p class="project-body">A short but descriptive description of a portfolio project including what was used to help build it.
+                      A short but descriptive description of a portfolio project including what was used to help build it.
+                    </p>
+                  </div>
+                  <ul class="project-technologies">
+                    <li>React</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                  </ul>
+                  <a><img src="Images/github.png" class="project-img-link"></a>
+                  <a><img src="Images/github.png" class="project-img-link"></a>
+            </div>
+        </div>
+
+        <div class="project">
+          <div class="project-opposite project-text">
+                <h3 class="project-sub-title"> Proj 02.</h3>
+                <h4 class="project-title">Medium personal Project</h4>
+                <div class="body-background body-opposite">
+                  <p class="project-body">A short but descriptive description of a portfolio project including what was used to help build it.
+                    A short but descriptive description of a portfolio project including what was used to help build it.
+                  </p>
+                </div>
+                <ul class="project-technologies">
+                  <li>React</li>
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                </ul>
+                <a><img src="Images/github.png" class="project-img-link"></a>
+                <a><img src="Images/github.png" class="project-img-link"></a>
+          </div>
+          <div class="project-demo">
+            <img src="Images/plant.jpg" class="static"><img src="Images/Plant Gif inspo.gif">
+          </div>
+        </div> -->
+
+        <div class="project">
+          <div class="project-demo">
+              <img src="Images/BuildAQuizScreenshot.png">
+          </div>
+          <div class="project-text">
+            <!-- Change Project number when new projects are added  -->
+                <h3 class="project-sub-title"> Proj 01.</h3>
+                <h4 class="project-title">Build A Quiz</h4>
+                <div class="body-background">
+                  <p class="project-body">
+                    An editable quiz game that lets users create quizzes based on topics inputted by the user. Demonstrates the use of React, managing state with useState, referencing elements on the DOM through useRef, and taking in data from a form.
+                  </p>
+                </div>
+                <ul class="project-technologies">
+                  <li>React</li>
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                </ul>
+                <button class="outside-link" ><a href="https://github.com/WAbby404/Build-a-Quiz" target="_blank" class="link-styling">Github</a></button>
+                <button class="outside-link" ><a href="" target="_blank" class="link-styling">Live demo</a></button>
+          </div>
+      </div>
+
+        <div class="project">
+          <div class="project-opposite project-text">
+                        <!-- Change Project number when new projects are added  -->
+                <h3 class="project-sub-title"> Proj 02.</h3>
+                <h4 class="project-title">Portfolio Site</h4>
+                <div class="body-background body-opposite">
+                  <p class="project-body">My portfolio site was one of the first heavily-finished projects that got me excited to delve deeper. The site was built on my own with CSS, HTML, and JavaScript, and is hosted by GitHub Pages. It's used as a resource to get to know me better personally, and to showcase my work.
+                  </p>
+                </div>
+                <ul class="project-technologies">
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                </ul>
+                <button class="outside-link" ><a href="https://github.com/WAbby404/WAbby404.github.io" target="_blank" class="link-styling">Github</a></button>
+                <button class="outside-link" ><a href="https://wabby404.github.io/" target="_blank" class="link-styling">Live demo</a></button>
+          </div>
+          <div class="project-demo">
+            <img src="Images/PortfolioSiteScreenshot.jpg ">
+          </div>
+        </div>
+    </div>
+
+
+      <div class="contact" id="contact">
+        <div>
+              <h3 class="contact-sub-title">Interested?</h3>
+              <h2 class="section-header contact-title">Get in contact with me!</h2>
+              <p class="contact-body">If you like my work and are interested in having me work for you, reach out! I post updates to my site and social medias frequently, and am constantly working on new projects and challenging myself. I would love to hear from you! <br>Thanks for visiting!</p>
+        </div>
+        <div class="contact-info">
+          <div class="contact-info-block flex">
+            <div class="contact-link">
+              <a href="https://github.com/WAbby404" target="_blank">Github</a>
+            </div>
+            <span>✦</span>
+            <div class="contact-link">
+              <a href="https://www.linkedin.com/in/abbywaddell4042/" target="_blank">Linkedin</a>
+            </div>
+          </div>
+          <div class="contact-name">
+            Abby<br>Waddell
+          </div>
+          <div class="contact-info-block-r flex">
+            <div class="contact-link contact-link-r">
+              <a href="#" class="" target="_blank">Resume</a>
+            </div>
+            <span>✦</span>
+            <div class="contact-link contact-link-r">
+              <a href="mailto:Wabby.404@gmail.com" class="">Wabby.404@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+        <p>Built by Abby Waddell 2022</p>
+    </div>
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
